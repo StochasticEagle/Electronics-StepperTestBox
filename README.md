@@ -49,6 +49,6 @@ LCD screen sample:
 This program may be built and uploaded to Arduino using PlatformIO or Arduino (tested in both).  Loop timing on the 16 MHz Arduino is about 500 us, so it can't do high speeds with more microsteps (like 1:16) and may skip.  PlatformIO was used with the -O3 option (because Arduino IDE lacks this) to optimize the code for speed prior to upload.
 
 ```
-RAM:   [===       ]  25.3% (used 518 bytes from 2048 bytes)
-Flash: [===       ]  29.8% (used 9140 bytes from 30720 bytes)
+RAM:   [==        ]  15.1% (used 309 bytes from 2048 bytes)
+Flash: [===       ]  27.1% (used 8336 bytes from 30720 bytes)
 ```
