@@ -137,7 +137,7 @@ void setup()
 
     // Stop button: Only short press on release, no long press
     stopButton.onShortPressPress = []() {
-        Serial.println("Stop button short press (press)");
+        //Serial.println("Stop button short press (press)");
         devMode = DM_STOP;
         digitalWrite(MTR_EN_PIN, HIGH);
         setColorMode();
