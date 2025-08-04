@@ -1,5 +1,7 @@
 # Stepper Motor Control Test Box
 
+![Alt text](Images.png?raw=true "Operation")
+
 ### About
 
 This test box allows one to control and test stepper motors in or out of a system, and to test system mechanics without having control boards installed or complete systems.  The built-in LED on pin13 is used as a heartbeat LED, flashing with a blink rate of 1 Hz.  No serial data is sent over usb, and the USB connection is not used in the device.  Loop timing on the 16 MHz Arduino is about 500 us, so it can't do high speeds with more microsteps (like 1:16) and may skip.
