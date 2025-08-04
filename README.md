@@ -4,22 +4,6 @@
 
 This test box allows one to control and test stepper motors in or out of a system, and to test system mechanics without having control boards installed or complete systems.  The built-in LED on pin13 is used as a heartbeat LED, flashing with a blink rate of 1 Hz.  No serial data is sent over usb, and the USB connection is not used in the device.  Loop timing on the 16 MHz Arduino is about 500 us, so it can't do high speeds with more microsteps (like 1:16) and may skip.
 
-### Parts
-
-* Arduino Nano
-* Stepper motor driver
-* Pin headers
-* RGB LED (optional)
-* 16x2 character LCD (RGB backlight preferred)
-* Buttons
-* Potentiometer with knob
-* Wires
-* Prototyping boards or custom PCB
-* Project box (optional, breadboard use possible)
-* 33 ohm resistor (red LED current balancing, others may or may not be needed depending on LED setup)
-* LM7805 and capacitors or other voltage regulator setup
-* 9V to 30V DC Power Supply
-
 ### Controls
 
 * Green - "Run" button, tells the controller to issue pulses to the stepper driver
@@ -44,7 +28,7 @@ LCD screen sample:
   n:        722345 r:o
   ```
 
-### Building
+### Compiling Software
 
 This program may be built and uploaded to Arduino Nano using PlatformIO or Arduino (tested in both).  PlatformIO was used with the -O3 option (because Arduino IDE lacks this) to optimize the code for speed prior to upload.
 
@@ -52,6 +36,23 @@ This program may be built and uploaded to Arduino Nano using PlatformIO or Ardui
 RAM:   [==        ]  15.1% (used 309 bytes from 2048 bytes)
 Flash: [===       ]  27.1% (used 8336 bytes from 30720 bytes)
 ```
+
+### Parts
+
+* Arduino Nano
+* Stepper motor driver
+* Pin headers
+* RGB LED (optional)
+* 16x2 character LCD (RGB backlight preferred)
+* Buttons
+* Potentiometer with knob
+* Wires
+* Prototyping boards or custom PCB
+* Project box (optional, breadboard use possible)
+* 33 ohm resistor (red LED current balancing, others may or may not be needed depending on LED setup)
+* LM7805 and capacitors or other voltage regulator setup (for 5V logic power)
+* 9V to 30V DC Power Supply (for motor power and voltage regulator supply)
+
 
 ### Circuit Diagram
 
