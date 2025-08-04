@@ -2,7 +2,7 @@
 
 ### About
 
-This test box allows one to control and test stepper motors in or out of a system, and to test system mechanics without having control boards installed or complete systems.  The built-in LED on pin13 is used as a heartbeat LED, flashing with a blink rate of 1 Hz.  No serial data is sent over usb, and the USB connection is not used in the device.
+This test box allows one to control and test stepper motors in or out of a system, and to test system mechanics without having control boards installed or complete systems.  The built-in LED on pin13 is used as a heartbeat LED, flashing with a blink rate of 1 Hz.  No serial data is sent over usb, and the USB connection is not used in the device.  Loop timing on the 16 MHz Arduino is about 500 us, so it can't do high speeds with more microsteps (like 1:16) and may skip.
 
 ### Parts
 
@@ -46,7 +46,7 @@ LCD screen sample:
 
 ### Building
 
-This program may be built and uploaded to Arduino using PlatformIO or Arduino (tested in both).  Loop timing on the 16 MHz Arduino is about 500 us, so it can't do high speeds with more microsteps (like 1:16) and may skip.  PlatformIO was used with the -O3 option (because Arduino IDE lacks this) to optimize the code for speed prior to upload.
+This program may be built and uploaded to Arduino Nano using PlatformIO or Arduino (tested in both).  PlatformIO was used with the -O3 option (because Arduino IDE lacks this) to optimize the code for speed prior to upload.
 
 ```
 RAM:   [==        ]  15.1% (used 309 bytes from 2048 bytes)
