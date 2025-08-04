@@ -52,3 +52,8 @@ This program may be built and uploaded to Arduino using PlatformIO or Arduino (t
 RAM:   [==        ]  15.1% (used 309 bytes from 2048 bytes)
 Flash: [===       ]  27.1% (used 8336 bytes from 30720 bytes)
 ```
+
+### Circuit Diagram
+
+![Alt text](CircuitDiagram.png?raw=true "Circuit Diagram")
+
