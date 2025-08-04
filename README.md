@@ -42,15 +42,17 @@ Flash: [===       ]  27.1% (used 8336 bytes from 30720 bytes)
 * Arduino Nano
 * Stepper motor driver
 * Pin headers
-* RGB LED (optional)
-* 16x2 character LCD (RGB backlight preferred)
+* 16x2 character LCD (RGB backlight, otherwise use RGB LED with circuit modifications)
 * Buttons
-* Potentiometer with knob
+* Potentiometer with knob (10 K ohm)
+* Trimmer potentionmeter (10 K ohm, small)
+* 33 ohm resistor (red LED current balancing, others may or may not be needed depending on LED setup)
+* Logic Power Supply:
+    * LM7805, heatsink, Capacitors (100 uF / 50 WVDC, 10 uF, and 10 nF ("104" ceramic pancake))
+    * Or adjustable DC-DC voltage regulator setup with 100 uF / 50 WVDC input capacitor
 * Wires
 * Prototyping boards or custom PCB
 * Project box (optional, breadboard use possible)
-* 33 ohm resistor (red LED current balancing, others may or may not be needed depending on LED setup)
-* LM7805 and capacitors or other voltage regulator setup (for 5V logic power)
 * 9V to 30V DC Power Supply (for motor power and voltage regulator supply)
 
 
