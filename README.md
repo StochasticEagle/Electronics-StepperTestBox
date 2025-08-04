@@ -2,7 +2,7 @@
 
 ### About
 
-This test box allows one to control and test stepper motors in or out of a system, and to test system mechanics without having control boards installed or complete systems.
+This test box allows one to control and test stepper motors in or out of a system, and to test system mechanics without having control boards installed or complete systems.  The built-in LED on pin13 is used as a heartbeat LED, flashing with a blink rate of 1 Hz.  No serial data is sent over usb, and the USB connection is not used in the device.
 
 ### Parts
 
